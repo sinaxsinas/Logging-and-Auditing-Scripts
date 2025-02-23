@@ -1,0 +1,5 @@
+#!/bin/bash
+log_file="application.log"
+mv $log_file $(date +%Y%m%d)_$log_file
+touch $log_file 
+echo "Log rotated." 
